@@ -1,11 +1,19 @@
 import React from 'react'
-import { Wrapper } from './Styled'
-
+import Forum from './Forum'
+import Navbar from './Navbar'
+import Sidebar from './Sidebar'
+import "./style.css";
 
 const Biznes = () => {
   return (
-   <Wrapper>salom</Wrapper>
+    <div className="container">
+       <Navbar/>
+        <div className='main'>
+        <Sidebar/>
+        <Forum/>
+        </div>
+    </div>
   )
 }
 
-export default Biznes
+export default Biznes;
